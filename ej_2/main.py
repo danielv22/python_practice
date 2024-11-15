@@ -22,3 +22,13 @@ def squareNumbers(elemLts, s: int):
             result.append(square)
 
     return sortItems(result)
+
+# Test
+array = [1, 2, 3, 4, 5, 8]
+s = 8
+
+try:
+    response = squareNumbers(array, s)
+    print(response) # Output: [1, 4, 9, 16, 25, 64]
+except Exception as e:
+    print(e.exception)

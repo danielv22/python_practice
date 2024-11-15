@@ -24,3 +24,13 @@ def lookForNAndDelete(elemLts, s: int):
             result.append(int(item))
 
     return sortItems(result)
+
+# Test
+array = [1, 2, 3, 4, 5, 8]
+s = 8
+
+try:
+    response = lookForNAndDelete(array, s)
+    print(response) # Output: [1, 2, 3, 4, 5]
+except Exception as e:
+    print(e.exception)
